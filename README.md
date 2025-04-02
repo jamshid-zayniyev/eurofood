@@ -36,7 +36,7 @@ TOKEN=YOUR_TELEGRAM_ID
 <p>3. Start the app</p>
 
 ```
-npm run dev
+npm start
 ```
 
   
