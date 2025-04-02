@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Gotham';
+  /* src: url('./assets/fonts/GothamProMediumItalic.ttf')  format('opentype'); */
+  /* src: url('./assets/fonts/GothaProBla.otf')  format('opentype'); */
+  /* src: url('./assets/fonts/GothaProBol.otf')  format('opentype'); */
+  /* src: url('./assets/fonts/GothaProLig.otf')  format('opentype'); */
+  /* src: url('./assets/fonts/GothaProLigIta.otf')  format('opentype'); */
+  /* src: url('./assets/fonts/GothaProMed.otf')  format('opentype'); */
+  src: url('./assets/fonts/GothaProReg.otf')  format('opentype');
+  }
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gotham';
+  box-sizing: border-box;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.containerr{
+    @apply px-5 sm:px-[24px] md:px-[32px] 2xl:px-[96px] flex flex-col justify-center w-full max-w-[1730px] mx-auto;
+}
+.btn__one{
+    @apply flex justify-center items-center gap-2 transition-[2s] hover:bg-[#ab2323] bg-red  h-[45px] 2xl:h-[60px] px-2 rounded-[30px] border-solid border-[1px] border-red ;
+}
+.btn__one:hover{
+    @apply bg-[white] transition-[2s];
+}
+.btn__one:hover p{
+  @apply text-red transition-[2s];
+}
+.btn__one__icon{
+    @apply bg-[white] transition-[2s] w-[36px] h-[36px] 2xl:w-[44px] 2xl:h-[44px] rounded-full justify-center text-red;
+}
+.btn__one:hover .btn__one__icon{
+    @apply bg-red text-[white] transition-[2s];
+}
+.btn__light{
+  @apply flex justify-center items-center gap-2 transition-[2s] hover:bg-[#ab2323] bg-[transparent] w-auto h-[45px] 2xl:h-[60px] px-2 rounded-[30px] border-solid border-[1px] border-red ;
+}
+.btn__light__icon{
+  @apply bg-red transition-[2s] w-[36px] h-[36px] 2xl:w-[44px] 2xl:h-[44px] rounded-full justify-center text-[white];
+}
+
+.btn__light:hover p{
+  @apply text-[white] transition-[2s];
+}
+.btn__light:hover .btn__light__icon{
+  @apply bg-[white] text-red transition-[2s];
+}
+.btn__white{
+  @apply flex justify-center items-center gap-2 transition-[2s] hover:bg-[transparent] bg-[white] w-auto h-[45px] 2xl:h-[60px] px-2 rounded-[30px] border-solid border-[1px] border-[white];
+}
+.btn__white:hover p{
+  @apply text-[white] transition-[2s];
+}
+
+
+/* .swiper{
+  @apply w-[100%] h-[100%];
+} */
+
+/* .swiper-slide{
+  width: 100%;
+} */
+/* .swiper-wrapper{
+  @apply justify-center;
+}
+.swiper-slide{
+    @apply  text-[center] text-[18px]  flex justify-center items-center;
+} */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: static !important;
+}
+
+/* .swiper-slide img {
+  @apply block  w-[100%] h-[100%] object-cover;
+} */
+.swiper-button-prev{
+  position: absolute !important;
+  top: 50% !important;
+  left: 0% !important;
+  transform: translate(-50%,-50%);
+  color: red !important;
+}
+.swiper-button-prev::after,.swiper-button-next::after{
+  font-size:30px !important;
+  font-weight: bold;
+}
+
+.swiper-button-next{
+  position: absolute !important;
+  top: 50% !important;
+  left: 100% !important;
+  transform: translate(-50%,-50%);
+  color: red !important;
+}
+
+/* src/components/MapWithRotatingText.css */
+
+
+#text #rotspan {
+  position: absolute;
+  transform-origin: 0 175px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #A3ABB3;
+}
+@media screen and (min-width:768px) {
+  #text #rotspan {
+    transform-origin: 0 125px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width:1024px) {
+  #text #rotspan {
+    transform-origin: 0 200px;
+  }
+}
+@media screen and (min-width:1280px) {
+  #text #rotspan {
+    transform-origin: 0 220px;
+  }
+}
+@media screen and (min-width:1526px) {
+  #text #rotspan {
+    transform-origin: 0 260px;
+  }
+}
+
+
+
+
+
+
+
+
+
